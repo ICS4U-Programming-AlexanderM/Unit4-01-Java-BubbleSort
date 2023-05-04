@@ -71,7 +71,7 @@ public final class BubbleSort {
                     final int[] sorted = sort(arrInt, arrInt.length);
                     sortStr = sortStr + Arrays.toString(sorted) + "\n";
                 } catch (NumberFormatException err) {
-                    sortStr = sortStr + "Line cannot be converted to int.\n";
+                    sortStr = sortStr + "Error: " + err.getMessage() + "\n";
                 }
             }
 
